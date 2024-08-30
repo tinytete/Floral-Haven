@@ -1,0 +1,562 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span{
+    color: var(--pink);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #f3e5f5;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--pink);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #f3e5f5;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/1555.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.types .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.types .flower-type .content {
+    margin-bottom: 20px;
+}
+
+.types .flower-type .imge {
+    margin-bottom: 30px; 
+    margin-top: 10px;
+}
+
+.types .row .imge{
+    flex: 1 1 40rem;
+    position: relative;
+    text-align: center;
+}
+
+.types .row .imge img{
+    width: 60;
+    border: 1.5rem solid #f3e5f5;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: auto;
+    object-fit: cover;
+    margin: 1rem auto; /* จัดกึ่งกลางรูปภาพ */
+}
+
+.types .row .content{
+    flex: 1 1 35rem; /* ปรับความกว้างของ content ให้สัมพันธ์กับรูปภาพ */
+    max-width: 85%; /* จำกัดความกว้างสูงสุด */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+}
+
+.types .row .content h2{
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.types .row .content h3{
+    font-size: 1.7rem;
+    color: #333;
+    text-align: center;
+}
+
+.types .row .content p{
+    font-size: 1.6rem; /* ปรับขนาดตัวอักษร */
+    color: #333;
+    padding: 1rem 2rem; /* เพิ่มระยะห่างระหว่างข้อความ */
+    line-height: 2rem; /* เพิ่มความสูงของบรรทัด */
+    text-align: justify; /* จัดข้อความให้เต็มบรรทัด */
+}
+
+.careguide .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.careguide .flower-careguide .content {
+    margin-bottom: 2px;
+}
+
+.careguide .flower-careguide .imge { 
+    margin-bottom: 3px; 
+    margin-top: 1px;
+    
+}
+
+.careguide  .row .imge{
+    flex: 1 1 40rem;
+    position: relative;
+    text-align: center;
+}
+
+.careguide .row .imge img{
+    width: 60%;
+    border: 1.5rem solid #f3e5f5;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: auto;
+    object-fit: cover;
+    margin: 1rem auto; /* จัดกึ่งกลางรูปภาพ */
+}
+
+.careguide .row .content{
+    flex: 1 1 35rem; /* ปรับความกว้างของ content ให้สัมพันธ์กับรูปภาพ */
+    max-width: 85%; /* จำกัดความกว้างสูงสุด */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+}
+
+.careguide .row .content h2{
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.careguide .row .content h3{
+    font-size: 1.7rem;
+    color: #333;
+    text-align: center;
+}
+
+.careguide .row .content p {
+    font-size: 1.6rem; /* ปรับขนาดตัวอักษร */
+    color: #333;
+    padding: 1rem 2rem; /* เพิ่มระยะห่างระหว่างข้อความ */
+    line-height: 2rem; /* เพิ่มความสูงของบรรทัด */
+    text-align: justify; /* จัดข้อความให้เต็มบรรทัด */
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(13, 0, 24, 0.1);
+    border: 1rem solid rgba(120, 26, 175, 0.14);
+    border-radius: 5rem;
+    background: #f3e5f5;
+}
+
+.contact .row .imge {
+    flex: 1 1 40rem;
+}
+
+.contact .row .imge img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.contact .row form .box {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin: 0.7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus {
+    border-color:
+ var(--pink);
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #f3e5f5;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .types .row .content, .careguide .row .content {
+        max-width: 100%; /* ให้ข้อความเต็มหน้าจอในมือถือ */
+    }
+
+    .types .row .imge img, .careguide .row .imge img {
+        width: 80%; /* ปรับขนาดรูปในมือถือ */
+    }
+}
+
+
+    .heading{
+        font-size: 3rem;
+    }
+
+.flowergallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.flowergallery .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0.5rem 1.5rem #f3e5f5;
+    border-radius: 5rem;
+    border: 1rem solid #f3e5f5;
+    position: relative;
+}
+
+.flowergallery .box-container .box .imge{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.flowergallery .box-container .box .imge img{
+    height: 25rem;
+}
+
+.flowergallery .box-container .box:hover .imge img{
+    transform: scale(1.1);
+}
+
+.flowergallery .box-container .box .imge .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+}
+
+.flowergallery .box-container .box:hover .imge .icons{
+    bottom: 0;
+}
+
+.flowergallery .box-container .box .imge .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--pink);
+    color:#f3e5f5;
+}
+
+.flowergallery .box-container .box .imge .icons .book-btn{
+    border-left: .1rem solid #fff7;
+    border-right:.1rem solid #fff7;
+    width: 100%;
+}
+
+.flowergallery .box-container .box .imge .icons a:hover{
+    background: #333;
+}
+
+.flowergallery .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.flowergallery .box-container .box .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.flowergallery .box-container .box .content p{
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.aboutme {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Container settings */
+.container {
+    max-width: 1000px; /* Increased max-width */
+    margin: 0 auto;
+    padding: 40px; /* Increased padding for larger content area */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px; /* Increased border-radius for smoother edges */
+    margin-top: 80px; /* Increased margin-top to give more breathing room */
+}
+
+/* Header styling */
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+}
+
+/* About Me section styling */
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Added to allow wrapping of content on smaller screens */
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100%; /* Adjusted width to be responsive */
+    max-width: 200px; /* Maximum width to prevent it from being too large */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 40px;
+    border: 5px solid #fff; /* Increased border size */
+    object-fit: cover; /* Ensures the image covers the space without being distorted */
+}
+
+.intro-text {
+    max-width: 600px; /* Increased max-width */
+    text-align: left;
+    font-size: 1.7rem; /* Larger text for better readability */
+}
+
+/* Links section styling */
+.links h2 {
+    margin-bottom: 20px; /* Increased margin-bottom for spacing */
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Add margin-top to create more space */
+}
+
+.links li {
+    margin-bottom: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ffa500;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 50px; /* Increased margin-top */
+    font-size: 1.2em;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .profile-img {
+        margin-right: 0; /* Remove margin when stacked */
+        margin-bottom: 20px; /* Add margin below the image when stacked */
+    }
+}
